@@ -8,7 +8,7 @@ Readme 								March 2018, vers I
 
 Computation of local and 'signal-close-to-noise' calcium activity
 
-![Logo](https://github.com/jpits30/NeuronActivityTool/blob/master/Logo.png)
+![Logo](https://github.com/jpits30/Calcium_Activity_Tool/blob/master/NeuronActivityMouseClickGit1.0/Logo.png)
 
 Calcium imaging has become a standard tool to investigate local, spontaneous, or cell-autonomous calcium signals in neurons. Some of these calcium signals are fast and ‘small’, thus making it difficult to identify real signaling events due to an unavoidable signal noise. Therefore, it is difficult to assess the spatiotemporal activity footprint of individual neurons or a neuronal network. We developed this open source tool to automatically extract, count, and localize calcium signals from the whole x,y-t image series. The tool is useful for an unbiased comparison of activity states of neurons, helps to assess local calcium transients, and even visualizes local homeostatic calcium activity. The calcium event computation is based on a continuous wavelet transform-guided peak detection to identify calcium signal candidates. The highly sensitive calcium event definition is based on identification of peaks in 1D data through analysis of a 2D wavelet transform surface. The tool is powerful enough to visualize signal-close-to-noise calcium activity, but can also be applied on other imaging data.
 
@@ -18,7 +18,7 @@ This bioinformatics tool facilitates the unbiased assessment of calcium signals 
 This tool shifts the focus from calcium spike analysis of cell bodies to local ‘signal-close-to-noise’ analysis in any area of a neuron.
 The idea is to use an unbiased x,y-grid, to include all pixels in an imaging video and to offer an activity distribution map. The tool avoids a preferential look at one activity mode of a neuron, e.g. the spiking behavior of neuronal somata, but instead tries to find every activity by detecting signals-close-to-noise, however small.
 
-![Fig9](https://github.com/jpits30/NeuronActivityTool/blob/master/Figure9-mod.png)
+![Fig9](https://github.com/jpits30/Calcium_Activity_Tool/blob/master/NeuronActivityMouseClickGit1.0/Figure9-mod.png)
 Figure 1. This open source tool automatically extracts, counts, and localizes calcium signals in the whole x,y-t image series.
 
 The tool is highly sensitive for local, specific activity and challenges the "all is just noise" hypothesis. Our tool accepts that a signal trace is never smooth. Pre-processing of raw data is not needed and all information from a grid window is included.
