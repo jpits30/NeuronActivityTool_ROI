@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="37.0" layoutY="420.0" mnemonicParsing="false" onAction="#capturePoints" prefHeight="31.0" prefWidth="132.0" text="Detect Activity" />
+      <Button layoutX="189.0" layoutY="420.0" mnemonicParsing="false" onAction="#stopCapture" prefHeight="31.0" prefWidth="132.0" text="Reset" />
+      <TextField fx:id="para_1" layoutX="239.0" layoutY="243.0" prefHeight="31.0" prefWidth="60.0" text="15" />
+      <TextField fx:id="para_2" layoutX="239.0" layoutY="192.0" prefHeight="31.0" prefWidth="60.0" text="3" />
+      <TextField fx:id="para_3" layoutX="201.0" layoutY="65.0" prefHeight="31.0" prefWidth="116.0" text="12" />
+      <Label layoutX="53.0" layoutY="248.0" prefHeight="21.0" prefWidth="171.0" text="Signal Average Threshold" />
+      <Label layoutX="60.0" layoutY="197.0" prefHeight="21.0" prefWidth="157.0" text="Signal to Noise Ratio" />
+      <Label layoutX="42.0" layoutY="70.0" prefHeight="17.0" prefWidth="116.0" text="Window Size" />
+      <Button layoutX="15.0" layoutY="137.0" mnemonicParsing="false" onAction="#loadAndProcess" prefHeight="31.0" prefWidth="323.0" text="Process Image Stack" />
+      <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadAndStart" prefHeight="31.0" prefWidth="323.0" text="Start Rserve And Load Image" />
+      <CheckBox fx:id="CriticCB" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="75.0" layoutY="291.0" mnemonicParsing="false" onAction="#enableCritical" text="General Activity Tendency" />
+      <CheckBox fx:id="VarShow" layoutX="76.0" layoutY="331.0" mnemonicParsing="false" onAction="#ShowVariance" text="Include variance" />
+      <TextField fx:id="WinSize" layoutX="235.0" layoutY="326.0" prefHeight="31.0" prefWidth="50.0" text="30" />
+      <TextField fx:id="MinActCount" layoutX="236.0" layoutY="372.0" prefHeight="31.0" prefWidth="50.0" text="1" />
+      <Label layoutX="63.0" layoutY="377.0" text="Minimum activity counts" />
+      <CheckBox fx:id="RoiAnalysis" layoutX="123.0" layoutY="105.0" mnemonicParsing="false" onAction="#PerformRoiAnalysis" text="ROI analysis" />
+   </children>
+</AnchorPane>
