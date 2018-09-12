@@ -296,7 +296,8 @@ public class PleaseProvideControllerClassName implements MouseListener {
 		 if(RServe.isConnected()==false){
 			 Bio7Action.callRserve();
 			 }
-		 
+
+		 IJ.getInstance().doCommand("Open...");
 		 RConnection c = RServe.getConnection();
 		 try {
 				// c.eval("imageSizeY<-" + h);
@@ -305,9 +306,7 @@ public class PleaseProvideControllerClassName implements MouseListener {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		 
-		 IJ.getInstance().doCommand("Open...");
-		 
+		 		 
 	    }
 	 
 		@FXML
